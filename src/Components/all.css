@@ -1,0 +1,94 @@
+.main {
+    position: absolute;
+    left: 25%;
+    bottom: 25%;
+    padding: 0px 100px 10px 10px;
+    border-radius: 3mm;
+    border-bottom-right-radius: 25mm;    
+    background-color: hsl(0, 0%, 100%);
+}
+
+.cal-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 0.2mm solid black;
+    padding-bottom: 25px;
+}
+.cal-div span {
+    padding: 8px 110px 12px 0px;
+    border: 0.1mm solid  hsl(0, 0%, 86%);
+    border-radius: 2mm;
+}
+.cal-div section input {
+    font-size: 18px;
+    font-weight: 800;
+    text-align: left;
+    position: absolute;
+    border: none;
+    outline: none; 
+    width: 18%;
+    margin-left: 1%;
+}
+.cal-div section input::placeholder {
+    color: hsl(259, 100%, 65%);
+}
+.cal-div h6 {
+    color: hsl(0, 100%, 67%);
+}
+.cal {
+    display: flex;
+    justify-content: flex-end;
+}
+.cal button {
+    margin-top: 2%;
+    padding: 5px 15px 5px 15px;
+    border: none;
+    background-color: hsl(259, 90%, 75%);
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+.outcome-div  {
+    margin-left: 10%;
+}
+.outcome-div h1 {
+   color: hsl(0, 0%, 8%); 
+   font-size: 40px;
+}
+.outcome-div span {
+    color: hsl(259, 100%, 65%);
+}
+
+@media (max-width:480px) {
+    .main {
+        position: absolute;
+        width: 50%;
+        left: 20%;
+        bottom: 15%;
+        padding: 0px 90px 10px 10px;
+        border-radius: 3mm;
+        border-bottom-right-radius: 25mm;    
+        background-color: hsl(0, 0%, 100%);
+    }
+    .cal-div {
+        gap: 15px;
+    }
+    .cal-div span {
+        padding: 8px 60px 12px 0px;
+    }
+    .cal-div section input {
+        font-size: 14px;
+        font-weight: 800;
+        width: 15%;
+        margin-left: 1%;
+    }
+    .cal {
+        display: flex;
+        justify-content: center;
+    }
+    .outcome-div h1 {
+        font-size: 30px;
+     }
+}
